@@ -523,7 +523,7 @@ body.no-scroll {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end; /* 底部对齐 */
+    align-items: flex-start; /* 底部对齐 */
     padding: 20px 40px;
     flex-wrap: wrap;
     box-sizing: border-box; /* 确保内边距包含在宽度内 */

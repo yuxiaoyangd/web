@@ -685,3 +685,48 @@ body.no-scroll {
     border-radius: 20px;
     font-size: 0.9em;
 }
+
+
+
+
+
+
+
+
+.case-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .case-item h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .case-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .case-section {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .case-section h4 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #3399CC;
+  }
+  
+  .case-section p {
+    margin: 5px 0;
+    line-height: 1.6;
+  }

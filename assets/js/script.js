@@ -42,6 +42,27 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     setInterval(showNextTestimonial, 3000); // 每3秒显示下一个评价
+
+    const video = document.getElementById("hero-video");
+    const loading = document.getElementById("loading");
+
+    // 显示加载页面
+    loading.style.display = "block";
+
+    video.addEventListener("canplaythrough", function() {
+        // 视频可以播放时隐藏加载页面
+        loading.style.display = "none";
+    });
+
+    video.addEventListener("loadeddata", function() {
+        // 视频数据加载完成时隐藏加载页面
+        loading.style.display = "none";
+    });
+
+    video.addEventListener("error", function() {
+        // 视频加载出错时隐藏加载页面
+        loading.style.display = "none";
+    });
 });
 
 document.addEventListener("scroll", function() {
@@ -73,4 +94,6 @@ document.addEventListener('DOMContentLoaded', function() {
         body.classList.remove('no-scroll');
     });
 });
+
+
 

@@ -516,8 +516,32 @@ body.no-scroll {
     display: block; /* 显示遮罩层 */
 }
 
-
-
+/* 优化加载页面的样式 */
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 9999;
+}
+#loading.hidden {
+    display: none;
+}
+#loading img {
+    width: 50px; /* 调整加载动画图片的大小 */
+    height: 50px;
+    margin-bottom: 10px;
+}
+#loading p {
+    font-size: 18px;
+    color: #333;
+}
 
 /* style.css */
 .footer-container {
